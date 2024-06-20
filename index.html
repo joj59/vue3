@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div class="app" id="app">
+            <h1>hello vue</h1>
+            <p>{{title}} - {{age}}</p>
+
+            <button v-on:click="age++">increase age</button>
+            <button v-on:click="age--">decrease age</button>
+            <button @click="incAge(10)">age to 10</button>
+
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
 </html>
